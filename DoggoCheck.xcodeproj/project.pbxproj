@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DD960E343E3BE7EB09A5A38 /* Pods_DoggoCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8831D063AA91F27FEC46955D /* Pods_DoggoCheck.framework */; };
 		BE733CA024BB1F5700C4D07D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE733C9F24BB1F5700C4D07D /* AppDelegate.swift */; };
 		BE733CA224BB1F5700C4D07D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE733CA124BB1F5700C4D07D /* SceneDelegate.swift */; };
 		BE733CA524BB1F5700C4D07D /* DoggoCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE733CA324BB1F5700C4D07D /* DoggoCheck.xcdatamodeld */; };
@@ -14,9 +15,14 @@
 		BE733CA924BB1F5800C4D07D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE733CA824BB1F5800C4D07D /* Assets.xcassets */; };
 		BE733CAC24BB1F5800C4D07D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE733CAB24BB1F5800C4D07D /* Preview Assets.xcassets */; };
 		BE733CAF24BB1F5800C4D07D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE733CAD24BB1F5800C4D07D /* LaunchScreen.storyboard */; };
+		BE733CB724BB331500C4D07D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE733CB624BB331500C4D07D /* ImagePicker.swift */; };
+		BE733CB924BB564A00C4D07D /* DoggoData.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BE733CB824BB564A00C4D07D /* DoggoData.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05F27B0038AFCF265B675454 /* Pods-DoggoCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggoCheck.debug.xcconfig"; path = "Target Support Files/Pods-DoggoCheck/Pods-DoggoCheck.debug.xcconfig"; sourceTree = "<group>"; };
+		1B53FA6F27C3D7EB8A5B3BCD /* Pods-DoggoCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoggoCheck.release.xcconfig"; path = "Target Support Files/Pods-DoggoCheck/Pods-DoggoCheck.release.xcconfig"; sourceTree = "<group>"; };
+		8831D063AA91F27FEC46955D /* Pods_DoggoCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoggoCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE733C9C24BB1F5700C4D07D /* DoggoCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoggoCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE733C9F24BB1F5700C4D07D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE733CA124BB1F5700C4D07D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		BE733CAB24BB1F5800C4D07D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE733CAE24BB1F5800C4D07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE733CB024BB1F5800C4D07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE733CB624BB331500C4D07D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		BE733CB824BB564A00C4D07D /* DoggoData.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DoggoData.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD960E343E3BE7EB09A5A38 /* Pods_DoggoCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83BC4BC4C34F29D34C4B45CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05F27B0038AFCF265B675454 /* Pods-DoggoCheck.debug.xcconfig */,
+				1B53FA6F27C3D7EB8A5B3BCD /* Pods-DoggoCheck.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BE733C9324BB1F5700C4D07D = {
 			isa = PBXGroup;
 			children = (
 				BE733C9E24BB1F5700C4D07D /* DoggoCheck */,
 				BE733C9D24BB1F5700C4D07D /* Products */,
+				83BC4BC4C34F29D34C4B45CD /* Pods */,
+				E5184F244F514E79487FBE5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +80,13 @@
 			children = (
 				BE733C9F24BB1F5700C4D07D /* AppDelegate.swift */,
 				BE733CA124BB1F5700C4D07D /* SceneDelegate.swift */,
+				BE733CB624BB331500C4D07D /* ImagePicker.swift */,
 				BE733CA624BB1F5700C4D07D /* ContentView.swift */,
 				BE733CA824BB1F5800C4D07D /* Assets.xcassets */,
 				BE733CAD24BB1F5800C4D07D /* LaunchScreen.storyboard */,
 				BE733CB024BB1F5800C4D07D /* Info.plist */,
 				BE733CA324BB1F5700C4D07D /* DoggoCheck.xcdatamodeld */,
+				BE733CB824BB564A00C4D07D /* DoggoData.mlmodel */,
 				BE733CAA24BB1F5800C4D07D /* Preview Content */,
 			);
 			path = DoggoCheck;
@@ -78,6 +100,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E5184F244F514E79487FBE5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8831D063AA91F27FEC46955D /* Pods_DoggoCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE733CB324BB1F5800C4D07D /* Build configuration list for PBXNativeTarget "DoggoCheck" */;
 			buildPhases = (
+				A7C7774F605433CCD41A4827 /* [CP] Check Pods Manifest.lock */,
 				BE733C9824BB1F5700C4D07D /* Sources */,
 				BE733C9924BB1F5700C4D07D /* Frameworks */,
 				BE733C9A24BB1F5700C4D07D /* Resources */,
+				7568B336AE6469266330E193 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +176,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7568B336AE6469266330E193 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoggoCheck/Pods-DoggoCheck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoggoCheck/Pods-DoggoCheck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoggoCheck/Pods-DoggoCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7C7774F605433CCD41A4827 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoggoCheck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE733C9824BB1F5700C4D07D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -151,8 +225,10 @@
 			files = (
 				BE733CA524BB1F5700C4D07D /* DoggoCheck.xcdatamodeld in Sources */,
 				BE733CA024BB1F5700C4D07D /* AppDelegate.swift in Sources */,
+				BE733CB724BB331500C4D07D /* ImagePicker.swift in Sources */,
 				BE733CA724BB1F5700C4D07D /* ContentView.swift in Sources */,
 				BE733CA224BB1F5700C4D07D /* SceneDelegate.swift in Sources */,
+				BE733CB924BB564A00C4D07D /* DoggoData.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,10 +362,12 @@
 		};
 		BE733CB424BB1F5800C4D07D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F27B0038AFCF265B675454 /* Pods-DoggoCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DoggoCheck/Preview Content\"";
+				DEVELOPMENT_TEAM = 24JFNMT5M2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DoggoCheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,10 +383,12 @@
 		};
 		BE733CB524BB1F5800C4D07D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B53FA6F27C3D7EB8A5B3BCD /* Pods-DoggoCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DoggoCheck/Preview Content\"";
+				DEVELOPMENT_TEAM = 24JFNMT5M2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DoggoCheck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
